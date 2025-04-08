@@ -23,7 +23,9 @@ while(true){
         case 1:
             acelerar(carro);
             break;
-    
+        case 5:
+            console.table(carro);
+            break; 
         default:
             break;
     }
@@ -41,6 +43,7 @@ function criaVeiculo(): Veiculo{
     const veiculo: Veiculo = new Veiculo();
     veiculo.marca = teclado('Marca: ');
     veiculo.modelo = teclado('Modelo: ');
+    veiculo.cor = teclado('Cor: ');
     veiculo.potencia = +teclado('Potência: ');
     veiculo.numeroMarchas = +teclado('Número de marchas: ');
     return veiculo;
